@@ -8,18 +8,16 @@ postsExpanded: false
 
 = Overview!
 
-Der Effective Trainings Blog dient mir persönlich als Notizbuch für meine Experimente mit interessanten Technologien
-und Ideen.
+Als Freiberufler ist man grundsätzlich _frei_ in seinem tun und trifft die meisten und _wichtigen_ Lebensentscheidungen selbst und _eigenverantwortlich_.
+Hierzu zählen neben den beruflichen Entscheidungen (Welche Projekte aquiriere ich? Mit welchen Kunden arbeite ich zusammen?) auch die privaten die **mindestens** genauso wichtig und auch schwierig sind.
 
-Natürlich beschäftige ich mich mit verteilten Systemen, Microservices und den Algorithmen und Prinzipien dahinter.
-Cloud-Computing treibt die Unternehmen um und bringt neuen Elan in die IT, denn damit lässt sich aus
-Unternehmenssicht sehr viel Geld verdienen.
+Hierzu zählen u.a.
 
-Neue Geschäftskonzepte entstehen, und wir in der IT sollen und dürfen den Anschluss nicht verpassen.
+- Altersvorsorge
+- private Finanzen
+- Versicherungen
 
-Ich bin Berater, Consultant und Softwareentwickler.
+Das sind die Themen, die die meisten Freiberufler _nicht_ besonders interessieren, auch wenn diese Themen mit derselben Sorgfalt bearbeitet werden sollten, wie die alljährliche Urlaubsplanung oder der Kauf eines Neuwagens.
 
-Und bei Bedarf unterstütze ich Sie gerne.
 
-Sie finden meine Homepage http://www.effectivetrainings.de[hier]
-
+> Eine gesicherte Zukunft bedeutet Arbeit heute.

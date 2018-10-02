@@ -1,6 +1,6 @@
 @media only screen and (min-width: 600px) {
     .top-page {
-        background-image: url("/assets/images/muenchen.png");
+        background-image: url("/assets/images/header.jpg");
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
@@ -8,9 +8,13 @@
 
 }
 
+.navbar {
+}
+
 .navbar-default {
     @extend .navbar-default;
     height: 120px;
+    background-color:#585858 !important;
 }
 
 .well {
@@ -20,6 +24,7 @@
 .sidebar-well {
     @extend .well;
     margin-top: 15px;
+    background-color:#585858 !important;
 }
 
 .admonitionblock {

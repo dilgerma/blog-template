@@ -3,40 +3,13 @@
 <html class="lt-ie10" lang="en"> <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{page.title}}</title>
-
-
-    <meta name="description"
-          content="Update what your Blog is about in this section"/>
-
-    <meta name="author" content="Your name goes here"/>
-    <meta name="copyright" content="Maybe consider a Creative Commons license"/>
-
     {% include header.html %}
-
-    <link rel="stylesheet" href="{{page.root}}css/app.css"/>
-    <script src="{{page.root}}js/vendor/modernizr.js"></script>
-    <script src="{{page.root}}js/toc.js"></script>
 </head>
 <body>
 
 
 <!-- Nav Bar -->
 <div class="container">
-    <!--nav class="top-bar" data-topbar>
-        <ul class="title-area">
-            <li class="name">
-                <h1>
-                    <a href="{{page.root}}">
-                        {{page.title}}
-                    </a>
-                </h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-    </nav-->
 
     {% include navbar.html %}
 
@@ -48,9 +21,10 @@
     <div class="row">
 
         <!-- Main Blog Content -->
-        <div class="col-sm-8 blog-main" role="content">
-
-            {{ content }}
+        <div class="col-sm-9" role="content">
+            <div class="blog-main">
+                {{ content }}
+            </div>
 
         </div>
 
@@ -59,6 +33,9 @@
         <!-- Sidebar -->
 
         <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+            <div><a href="/feed.xml">via RSS</a></div>
+
 
             <h4>Kategorien</h4>
             <ul id="posts" class="posts nav">
@@ -75,14 +52,8 @@
                 {% assign tags_list = nil %}
             </ul>
 
-            <div class="sidebar-well">
-                <h5>Über mich</h5>
-
-                <p>Ich bin Martin. Freiberuflicher Softwareentwickler / Consultant / Trainer. </p>
-                Verteilte Systeme, Resilient Software und Craftmanship.
-                10+ Jahre Erfahrung, <a
-                    href="http://www.amazon.de/gp/product/B00HXURPHG/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00HXURPHG&linkCode=as2&tag=splitshadewor-21">Buch-Autor</a>,
-                Git-Trainer, Geek, Daddy.
+            <div class="sidebar-panel">
+                {% include sidebar.html %}
             </div>
 
         </aside>
@@ -101,29 +72,8 @@
     </ul>
 
     <footer class="row">
-        <div class="large-12 columns">
-            <hr/>
-            <div class="row">
-                <div class="large-12 columns">
-                    {% include footer.html %}
-                </div>
-            </div>
-        </div>
+        {% include footer.html %}
     </footer>
-
-    <script src="{{page.root}}js/vendor/jquery.js"></script>
-    <script src="{{page.root}}js/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
-    <script src="{{page.root}}js/vendor/jquery.js"></script>
-    <script src="{{page.root}}js/foundation/foundation.js"></script>
-    <script>
-        $(document).foundation();
-
-        var doc = document.documentElement;
-        doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
 
 </div>
 </body>

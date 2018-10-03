@@ -1,3 +1,5 @@
+@import "custom/variables";
+
 @media only screen and (min-width: 600px) {
     .top-page {
         background-image: url("/assets/images/header.jpg");
@@ -14,17 +16,18 @@
 .navbar-default {
     @extend .navbar-default;
     height: 120px;
-    background-color:#585858 !important;
+    background-color:$base-color !important;
 }
 
-.well {
+.panel {
     color: white;
 }
 
-.sidebar-well {
-    @extend .well;
+.sidebar-panel {
+    @extend .panel;
     margin-top: 15px;
-    background-color:#585858 !important;
+    background-color:$base-color !important;
+    padding: 15px;
 }
 
 .admonitionblock {
@@ -33,4 +36,18 @@
 
 .admonitionblock >> .title {
     margin-right: 15px;
+}
+
+footer {
+    background-color: $base-color;
+    color: $default-font-color;
+    padding: 15px;
+}
+
+.blog-main {
+    padding: 25px;
+}
+
+a {
+    color: $base-color
 }

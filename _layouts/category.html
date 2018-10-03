@@ -1,0 +1,19 @@
+---
+layout: page
+---
+{% unless page.content == '' %}
+<p>{{ page.content }}</p>
+{% endunless %}
+
+{% unless site.categories.[page.category] | size > 0 %}
+<p>Bisher keine Posts</p>
+{% endunless %}
+
+{% for post in site.categories.[page.category] %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }} ({{ post.date | date: "%-d.%-m.%Y" }})
+    </a>
+</div>
+<hr>
+{% endfor %}

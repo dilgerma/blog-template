@@ -38,19 +38,11 @@
 
 
             <h4>Kategorien</h4>
-            <ul id="posts" class="posts nav">
-                {% assign tags_list = site.categories %}
-                {% if tags_list.first[0] == null %}
-                {% for tag in tags_list %}
-                <li><a href="#{{ tag }}">{{ tag | capitalize }}</a></li>
-                {% endfor %}
-                {% else %}
-                {% for tag in tags_list %}
-                <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
-                {% endfor %}
-                {% endif %}
-                {% assign tags_list = nil %}
-            </ul>
+            {% for category in site.categories %}
+            <a href="/category/{{ category[0] }}/" style="text-decoration: none;">
+                {{ category[0] | capitalize }}
+            </a><br/>
+            {% endfor %}
 
             <div class="sidebar-panel">
                 {% include sidebar.html %}
